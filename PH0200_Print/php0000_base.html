@@ -1,0 +1,100 @@
+<!-- URL: http://localhost/php/Source/php0000_base.php -->
+<!-- URL: http://lifeplan-it/php/Source/php0000_base.php -->
+<!-- HTMLRef: http://www.htmq.com/ -->
+<!-- PHP  Ref: http://jp.php.net/manual/ja/ -->
+<!-- FONT "Arial" -->
+
+<h2>PHP エスケープシーケンス</h2>
+<h3>概要</h3>
+  <pre class="wp-block-verse">HTMLタグやプログラム言語で使用する特殊記号を表示させます。</pre>
+
+<!--more-->
+
+<h3>解説</h3>
+
+<pre class="wp-block-verse">HTMLタグやプログラム言語で使用する特殊記号を表示させます。　
+改行、TAB等を文字列に埋め込む事ができます。 
+HTMLやプログラム言語で使用する記号を表示さる事ができます。 
+特殊記号は　”　”（ダブルコーテーション)　で囲みます。
+特殊記号の前に　\  （バックスラッシュ）　を付けます。
+<code> \n    改行</code>
+<code> \r    キャリッジリターン</code>
+<code> \t    タブ</code>
+<code> \¥    ¥文字</code>
+<code> \$    $文字</code>
+<code> \(    左括弧</code>
+<code> \)    右括弧</code>
+<code> \[    左括弧</code>
+<code> \]    右括弧</code>
+<code> \'    シングルクオーテーション</code>
+<code> \"    ダブルクオーテーション</code>
+<code> \nnn  8 進数表記</code>
+<code> \xnn  16 進数表記</code></pre>
+<!-- /wp:verse -->
+
+<!-- wp:heading {"level":3} -->
+<h3>サンプルコード</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":4} -->
+<h4>改行の例</h4>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="php" class="language-php">  &lt;?php	print( "一行目") ;  ?>
+  &lt;?php	print( "\n" ) ;  ?>
+  &lt;?php	print( "二行目") ;  ?></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":4} -->
+<h4>タブの例</h4>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="php" class="language-php">  &lt;?php	print( "タブ文字コード：\t" . 20 * 30 );?>
+  &lt;?php	print( "\t" . 40 * 30 );?>
+  &lt;?php	print( "\t" . 80 * 30 );?>
+  &lt;?php	print( "\n" );?></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":4} -->
+<h4>リテラル表記</h4>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="php" class="language-php">&lt;?php	print( "数式のリテラル\t" . 2*3 );?></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":4} -->
+<h4>シングルコーテションの表記</h4>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="php" class="language-php">&lt;?php	print( "シングルコーテーション\t" . 'I\'m studuing')  ?></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":4} -->
+<h4>ダブルコーテーションの内側にシングルクォーテーション</h4>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="php" class="language-php">
+  &lt;?php
+  print( "ダブルコーテーションの内側にシングルクォーテーション\t" );
+  $c = "'aaa'" ;   
+  print $c ;
+  ?></code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":4} -->
+<h4>シングルクォーテーションの内側にダブルコーテーション</h4>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="php" class="language-php">
+  &lt;?php
+  print( "シングルクォーテーションの内側にダブルコーテーション\t" );
+  $c = '"sss"'; 
+  print $c ;
+  ?></code></pre>
+<!-- /wp:code -->

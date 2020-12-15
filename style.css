@@ -1,0 +1,13 @@
+h1{ color:green ; background-color:lightcyan;}
+h2{ color:green ; background-color:lightcyan;}
+h3{ color:green ; background-color:lightcyan;}
+#Overview_title      { color:blue ; font-size:28px; background-color:White;    }
+#Overview_contents   { color:Black; font-size:18px; background-color:White;    }
+#Explanation_title   { color:blue ; font-size:24px; background-color:lightcyan;}
+#Explanation_contents{ color:Black; font-size:18px; background-color:White;    }
+#Source_title        { color:blue ; font-size:24px; background-color:lightcyan;}
+#Source_code         { color:Black; font-size:18px; background-color:White;    }
+#Execution_title     { color:blue ; font-size:24px; background-color:lightcyan;}
+#Execution_result    { color:Black; font-size:18px; background-color:White;    }
+#Footer_References   { color:Black; font-size:24px; background-color:lightcyan;}
+#Footer_home         { color:Black; font-size:24px; background-color:lightcyan;}
